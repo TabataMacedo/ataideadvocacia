@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --preto: #1E1E1E;
+    --vermelho: #BA0403;
+    --vinho: #940000;
+    --vinhoEscuro: #710012;
+    --azulMarinho: #1d1A55;
+    --cinza: #797979;
+    --branco: #EBEBEB;
+    --rosaClaro: #ffd0d0;
+    --titulo: "Bellefair", serif;
+    --texto: "Tajawal", sans-serif;
+}
+
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+    background-color: var(--branco);
+}
+
+ul li {
+    font-family: var(--texto);
+    hyphens: auto;
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+}
+
+/*Padding entre as seções*/
+/* .sections {
+    padding-top: 1%;
+    padding-bottom: 1%;
+} */
+
+.container__brand {
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+
+/* Fim estutura do site*/
+
+
+/*Início navbar*/
+
+.colornav {
+    background-color: var(--vinhoEscuro);
+    color: var(--branco);
+}
+
+/*Navbar para mudar a cor ao passar o mouse*/
+.dropdown-menu a.dropdown-item:hover {
+    background-color: var(--rosaClaro);
+}
+
+.logoNavBar {
+    width: 170px;
+}
+
+.faleadvogado {
+    padding: 15px;
+    background-color: var(--azulMarinho);
+    color: var(--branco);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+
+/*Fim navbar*/
+
+
+
+/*Início do quem somos*/
+
+.sections__titulo__advogado {
+    font-family: var(--titulo);
+    color: var(--branco);
+    font-size: 3.0rem;
+    margin-bottom: 1.5%;
+}
+
+.sections__titulo__enfase {
+    font-family: var(--titulo);
+    color: var(--vinhoEscuro);
+    font-size: 2.5rem;
+    margin-bottom: 1.5%;
+}
+
+.sections__titulo__especialidades {
+    font-family: var(--titulo);
+    color: var(--azulMarinho);
+    font-size: 1.7rem;
+    margin-bottom: 1.5%;
+}
+
+.homepage {
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 3%;
+    background-image: url("imagens/img_header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4%;
+}
+
+.sections__imagem {
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--azulMarinho);
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+/*Fim do quem somos*/
+
+
+/*Início áreas de atuação*/
+/*cores dos ícones da área de atuação*/
+.areaAtuacao__icones {
+    color: var(--azulMarinho);
+    margin: 10%;
+}
+
+.sections__areaAtuacao__icones a {
+    text-decoration: none;
+    font-family: var(--texto);
+    font-weight: 500;
+    color: var(--azulMarinho);
+    font-size: x-large;
+}
+
+/*Fim áreas de atuação*/
+
+
+
+/*Início do rodapé*/
+/*Para deixar fixado em baixo o rodapé*/
+.rodape {
+    bottom: 0;
+    padding-top: 3%;
+    line-height: 250%;
+    background-color: var(--vinhoEscuro);
+    margin-top: 3%;
+
+}
+
+/*Estilo do rodapé*/
+.rodape__titulo {
+    font-size: 190%;
+    color: var(--rosaClaro);
+    font-family: var(--texto);
+}
+
+
+.rodape__dados {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.rodape__dados:hover {
+    color: var(--rosaClaro);
+    text-decoration: none;
+    font-size: 155%;
+}
+
+.rodape__redes {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+    font-size: 210%;
+}
+
+.logos1:hover,
+.logos2:hover,
+.logos3:hover,
+.logos4:hover {
+    font-size: 180%;
+    color: var(--rosaClaro);
+}
+
+.rodape__whats__flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: var(--branco);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 38px;
+    z-index: 1000;
+}
+
+.rodape__copyright {
+    margin-top: 3%;
+    text-align: center;
+    color: var(--branco);
+}
+
+.rodape__copyright a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.atendimentos {
+    margin-left: 35%;
+}
+
+/*FIM do rodapé*/
+
+@media screen and (max-width: 992px) {
+    .container__brand {
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+
+    .sections__imagens {
+        max-width: 600px;
+    }
+
+
+    .homepage {
+        padding-bottom: 10%;
+    }
+
+    .sections__titulo__advogado {
+        font-size: 2rem;
+    }
+
+    .sections__titulo__enfase {
+        font-size: 1.5rem;
+    }
+
+    .sections__titulo__especialidades {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .mail {
+        margin-top: 15%;
+        font-size: 1.0rem;
+    }
+}
